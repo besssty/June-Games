@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 
 // Масив літніх звуків з варіантами відповідей
 const sounds = [
-	{ id: 1, name: 'Sea', audio: '/sounds/sea.mp3', options: ['Sea', 'Wind', 'Rain'] }, // Море
-	{ id: 2, name: 'Boat', audio: '/sounds/boat.mp3', options: ['Car', 'Boat', 'Train'] }, // Човен
+	{ id: 1, name: 'Sea', audio: '/sounds/sea.mp3', options: ['Sea', 'Wind', 'Sand'] }, // Море
+	{ id: 2, name: 'Ship', audio: '/sounds/boat.mp3', options: ['Car', 'Ship', 'Bike'] }, // Човен
 	{
 		id: 3,
 		name: 'Parrot',

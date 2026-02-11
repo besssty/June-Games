@@ -13,13 +13,13 @@ const weatherScenes = [
 function ChooseWeather() {
 	// Хук для навігації між сторінками
 	const navigate = useNavigate()
-	
+
 	// Стан для відстеження поточної сцени погоди
 	const [currentScene, setCurrentScene] = useState(0)
-	
+
 	// Стан для відображення зворотного зв'язку
 	const [feedback, setFeedback] = useState(null)
-	
+
 	// Стан для підрахунку балів
 	const [score, setScore] = useState(0)
 
@@ -31,7 +31,7 @@ function ChooseWeather() {
 		// Перевіряємо чи правильна відповідь
 		const correct = choice === scene.weather
 		setFeedback(correct ? 'correct' : 'wrong')
-		
+
 		// Якщо правильно - додаємо бал
 		if (correct) setScore(score + 1)
 
@@ -86,7 +86,7 @@ function ChooseWeather() {
 											? 'linear-gradient(135deg, #FF6B6B, #FF4444)' // Червоний для спеки
 											: 'linear-gradient(135deg, #E0F7FA, #B2EBF2)', // Блакитний для вітру
 							borderRadius: '24px',
-							padding: '80px',
+							padding: '60px',
 							marginBottom: '40px',
 							border: '6px solid #0077BE',
 							boxShadow: '0 8px 24px rgba(0, 0, 0, 0.15)',

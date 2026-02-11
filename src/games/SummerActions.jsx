@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 const actions = [
 	{ id: 1, action: 'Swim', emoji: '🏊', options: ['Swim', 'Run', 'Sleep'] }, // Плавати
 	{ id: 2, action: 'Play', emoji: '⚽', options: ['Eat', 'Play', 'Walk'] }, // Грати
-	{ id: 3, action: 'Rest', emoji: '🖖', options: ['Rest', 'Jump', 'Dance'] }, // Відпочивати
+	{ id: 3, action: 'Rest', emoji: '🥱', options: ['Rest', 'Jump', 'Dance'] }, // Відпочивати
 	{ id: 4, action: 'Boat', emoji: '🚤', options: ['Fly', 'Boat', 'Drive'] }, // Катання на човні
 	{ id: 5, action: 'Fish', emoji: '🎣', options: ['Fish', 'Cook', 'Paint'] }, // Рибалити
 ]
