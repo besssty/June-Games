@@ -4,19 +4,20 @@
 
 ### Крок 1: Відкрийте термінал/командний рядок
 
-Windows: Натисніть Win+R, введіть «cmd», натисніть Enter
-Mac: Натисніть Cmd+Space, введіть «terminal», натисніть Enter
-Linux: Натисніть Ctrl+Alt+T
+- Windows: Натисніть Win+R, введіть «cmd», натисніть Enter
+- Mac: Натисніть Cmd+Space, введіть «terminal», натисніть Enter
+- Linux: Натисніть Ctrl+Alt+T
 
 ### Крок 2: Перейдіть до папки проекту
 
-`cd path/to/summer-fun-games`
+- `cd path/to/summer-fun-games`
+
 (Замініть «path/to» на фактичне місцезнаходження)
 
 ### Крок 3: Встановити та запустити
 
-`npm install`
-`npm run dev`
+- `npm install`
+- `npm run dev`
 
 ---
 
