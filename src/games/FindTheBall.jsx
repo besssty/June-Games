@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 // Масив пляжних предметів, серед яких потрібно знайти м'яч
 const initialBeachItems = [
-	{ id: 1, emoji: '🟦', name: 'Towel' }, // Рушник
+	{ id: 1, emoji: '🚩', name: 'Flag' }, // Прапорець
 	{ id: 2, emoji: '⛱️', name: 'Umbrella' }, // Парасолька
 	{ id: 3, emoji: '🏄', name: 'Surfboard' }, // Дошка для серфінгу
 	{ id: 4, emoji: '⚽', name: 'Ball', isBall: true }, // М'яч - шуканий предмет!
