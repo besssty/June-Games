@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom'
 
 // Масив морських тварин зі звуками
 const animals = [
-	{ id: 1, name: 'Dolphin', emoji: '🐬', audio: '/src/public/sounds/dolphin.mp3' }, // Дельфін
-	{ id: 2, name: 'Crab', emoji: '🦀', audio: '/src/public/sounds/crab.mp3' }, // Краб
-	{ id: 3, name: 'Fish', emoji: '🐟', audio: '/src/public/sounds/fish.mp3' }, // Риба
-	{ id: 4, name: 'Whale', emoji: '🐋', audio: '/src/public/sounds/whale.mp3' }, // Кит
+	{ id: 1, name: 'Dolphin', emoji: '🐬', audio: '/sounds/dolphin.mp3' }, // Дельфін
+	{ id: 2, name: 'Crab', emoji: '🦀', audio: '/sounds/crab.mp3' }, // Краб
+	{ id: 3, name: 'Fish', emoji: '🐟', audio: '/sounds/fish.mp3' }, // Риба
+	{ id: 4, name: 'Whale', emoji: '🐋', audio: '/sounds/whale.mp3' }, // Кит
 ]
 
 // Функція для відтворення звуку
@@ -19,16 +19,16 @@ const playSound = src => {
 function SeaAnimals() {
 	// Хук для навігації між сторінками
 	const navigate = useNavigate()
-	
+
 	// Стан для режиму гри: 'learn' (навчання) або 'test' (тестування)
 	const [mode, setMode] = useState('learn')
-	
+
 	// Стан для відстеження поточного тестового питання
 	const [currentTest, setCurrentTest] = useState(0)
-	
+
 	// Стан для відображення зворотного зв'язку
 	const [feedback, setFeedback] = useState(null)
-	
+
 	// Стан для підрахунку балів у тесті
 	const [score, setScore] = useState(0)
 
@@ -52,12 +52,12 @@ function SeaAnimals() {
 
 		if (correct) {
 			// Правильна відповідь - відтворюємо звук успіху
-			playSound('/src/public/sounds/correct.mp3')
+			playSound('/sounds/correct.mp3')
 			setScore(prev => prev + 1)
 			setFeedback('correct')
 		} else {
 			// Неправильна відповідь - відтворюємо звук помилки
-			playSound('/src/public/sounds/wrong.mp3')
+			playSound('/sounds/wrong.mp3')
 			setFeedback('wrong')
 		}
 

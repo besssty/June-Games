@@ -4,24 +4,24 @@ import { useNavigate } from 'react-router-dom'
 
 // Масив літніх звуків з варіантами відповідей
 const sounds = [
-	{ id: 1, name: 'Sea', audio: '/src/public/sounds/sea.mp3', options: ['Sea', 'Wind', 'Rain'] }, // Море
-	{ id: 2, name: 'Boat', audio: '/src/public/sounds/boat.mp3', options: ['Car', 'Boat', 'Train'] }, // Човен
+	{ id: 1, name: 'Sea', audio: '/sounds/sea.mp3', options: ['Sea', 'Wind', 'Rain'] }, // Море
+	{ id: 2, name: 'Boat', audio: '/sounds/boat.mp3', options: ['Car', 'Boat', 'Train'] }, // Човен
 	{
 		id: 3,
 		name: 'Parrot',
-		audio: '/src/public/sounds/parrot.mp3',
+		audio: '/sounds/parrot.mp3',
 		options: ['Dog', 'Cat', 'Parrot'], // Папуга
 	},
 	{
 		id: 4,
 		name: 'Dolphin',
-		audio: '/src/public/sounds/dolphin.mp3',
+		audio: '/sounds/dolphin.mp3',
 		options: ['Dolphin', 'Whale', 'Seal'], // Дельфін
 	},
 	{
 		id: 5,
 		name: 'Beach Ball',
-		audio: '/src/public/sounds/ball.mp3',
+		audio: '/sounds/ball.mp3',
 		options: ['Beach Ball', 'Drum', 'Bell'], // Пляжний м'яч
 	},
 ]
@@ -35,13 +35,13 @@ const playSound = src => {
 function SummerSounds() {
 	// Хук для навігації між сторінками
 	const navigate = useNavigate()
-	
+
 	// Стан для відстеження поточного звуку
 	const [currentIndex, setCurrentIndex] = useState(0)
-	
+
 	// Стан для відображення зворотного зв'язку
 	const [feedback, setFeedback] = useState(null)
-	
+
 	// Стан для підрахунку балів
 	const [score, setScore] = useState(0)
 
@@ -60,12 +60,12 @@ function SummerSounds() {
 
 		if (correct) {
 			// Правильна відповідь - відтворюємо звук успіху
-			playSound('/src/public/sounds/correct.mp3')
+			playSound('/sounds/correct.mp3')
 			setScore(prev => prev + 1)
 			setFeedback('correct')
 		} else {
 			// Неправильна відповідь - відтворюємо звук помилки
-			playSound('/src/public/sounds/wrong.mp3')
+			playSound('/sounds/wrong.mp3')
 			setFeedback('wrong')
 		}
 
