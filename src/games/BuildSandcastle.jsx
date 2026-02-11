@@ -5,20 +5,23 @@ import { useNavigate } from 'react-router-dom'
 // Масив кроків для побудови замку з піску
 const steps = [
 	{ id: 1, name: 'Bucket', emoji: '🪣', instruction: 'Choose a bucket!' }, // Відро
-	{ id: 2, name: 'Shovel', emoji: '🪏', instruction: 'Choose a shovel!' }, // Лопатка
-	{ id: 3, name: 'Flag', emoji: '🚩', instruction: 'Add a flag!' }, // Прапорець
+	{ id: 2, name: 'Sand', emoji: '🏖️', instruction: 'Gather some sand!' }, // Пісок
+	{ id: 3, name: 'Water', emoji: '💧', instruction: 'Add water!' }, // Вода
+	{ id: 4, name: 'Walls', emoji: '🧱', instruction: 'Build a walls and towers!' }, // Стіна
+	{ id: 5, name: 'Shell', emoji: '🐚', instruction: 'Decorate with shells!' }, // Мушля
+	{ id: 6, name: 'Flag', emoji: '🚩', instruction: 'Add a flag!' }, // Прапорець
 ]
 
 function BuildSandcastle() {
 	// Хук для навігації між сторінками
 	const navigate = useNavigate()
-	
+
 	// Стан для відстеження поточного кроку побудови
 	const [currentStep, setCurrentStep] = useState(0)
-	
+
 	// Стан для збереження завершених кроків
 	const [completed, setCompleted] = useState([])
-	
+
 	// Стан для відображення готового замку
 	const [showCastle, setShowCastle] = useState(false)
 

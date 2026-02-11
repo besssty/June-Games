@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 // Масив пляжних предметів, серед яких потрібно знайти м'яч
 const initialBeachItems = [
-	{ id: 1, emoji: '🏖️', name: 'Towel' }, // Рушник
+	{ id: 1, emoji: '🟦', name: 'Towel' }, // Рушник
 	{ id: 2, emoji: '⛱️', name: 'Umbrella' }, // Парасолька
 	{ id: 3, emoji: '🏄', name: 'Surfboard' }, // Дошка для серфінгу
 	{ id: 4, emoji: '⚽', name: 'Ball', isBall: true }, // М'яч - шуканий предмет!
@@ -27,13 +27,13 @@ function FindTheBall() {
 
 	// Стан для перемішаних предметів
 	const [items, setItems] = useState([])
-	
+
 	// Стан для відстеження чи знайдено м'яч
 	const [found, setFound] = useState(false)
-	
+
 	// Стан для відстеження натиснутих предметів
 	const [clickedItems, setClickedItems] = useState([])
-	
+
 	// Стан для відображення зворотного зв'язку
 	const [feedback, setFeedback] = useState(null)
 
